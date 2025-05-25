@@ -234,3 +234,143 @@ ul p{
 .copyright{
     padding-top: 5px;
 }
+
+/* Responsive CSS for Amazon Clone */
+
+@media (max-width: 599px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    align-items: flex-start;
+  }
+
+  /* Line 1: Logo + Location */
+  .nav-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-logo {
+    width: 80px;
+    height: 40px;
+  }
+  .add-icon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 0.75rem;
+  }
+
+  /* Line 2: Search Bar */
+  .nav-search {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0;
+  }
+  .search-input {
+    font-size: 0.9rem;
+  }
+
+  /* Line 3: Sign In, Orders, Cart */
+  .nav-options-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .nav-second,
+  .nav-cart {
+    font-size: 0.9rem;
+    margin: 5px;
+  }
+  .nav-cart i {
+    font-size: 24px;
+  }
+
+  /* Shop boxes */
+  .box {
+    width: 90%;
+    margin: 10px auto;
+    height: auto;
+  }
+  .box-img {
+    height: 250px;
+  }
+
+  /* Panel */
+  .panel {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .panel p {
+    margin: 5px 0;
+  }
+
+  /* Footer */
+  .foot-panel2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .foot-panel3 {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+/* Medium Devices (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .nav-search {
+    width: 80%;
+    height: 38px;
+  }
+  .box {
+    width: 48%;
+    margin: 10px 1%;
+  }
+  .box-img {
+    height: 300px;
+  }
+  .panel {
+    justify-content: space-around;
+    height: auto;
+  }
+  .foot-panel2 {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+/* Large Devices (900px and above) */
+@media (min-width: 900px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+  .nav-search {
+    width: 900px;
+    height: 40px;
+  }
+  .box {
+    width: 23%;
+    height: 400px;
+    margin-top: 15px;
+  }
+  .box-img {
+    height: 350px;
+  }
+  .panel {
+    height: 40px;
+  }
+  .foot-panel2 {
+    flex-wrap: nowrap;
+    height: 350px;
+  }
+}
